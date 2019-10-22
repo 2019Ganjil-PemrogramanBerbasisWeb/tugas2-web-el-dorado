@@ -1,12 +1,3 @@
-
-
-
-
-
-
-
-
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -74,9 +65,6 @@
                 </li>
                 
                 <li><a href="shop.html">Belanja</a></li>
-                <li><a href="#"> Pesanan </a></li>
-                <li><a href="#"> Profil</a></li>
-                <li><a href="contact.html"> Kontak</a></li>
               </ul>
             </nav>
           </div>
