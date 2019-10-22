@@ -24,7 +24,7 @@ if($cek > 0){
 		$_SESSION['username'] = $username;
 		$_SESSION['password'] = $password; 
 		// alihkan ke halaman dashboard admin
-		header("location:index.html");
+		header("location:homepage.php");
 }else{
 	header("location:./lgn/login-salah.html?pesan=gagal");
 }
