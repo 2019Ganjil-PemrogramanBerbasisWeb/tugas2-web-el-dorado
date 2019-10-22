@@ -26,6 +26,6 @@ if($cek > 0){
 		// alihkan ke halaman dashboard admin
 		header("location:index.html");
 }else{
-	header("location:index.php?pesan=gagal");
+	header("location:./lgn/login-salah.html?pesan=gagal");
 }
 ?>
