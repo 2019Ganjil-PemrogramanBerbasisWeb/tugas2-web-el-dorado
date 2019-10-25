@@ -13,14 +13,14 @@
     /*$name = filter_input(INPUT_POST, 'name'?/*, FILTER_SANITIZE_STRING);
     $username = filter_input(INPUT_POST, 'username'*, FILTER_SANITIZE_STRING);
     
-    // enkripsi password*/
+    // enkripsi password
     $password = password_hash($_POST["pass"], PASSWORD_DEFAULT);
-    $email = filter_input(INPUT_POST, 'email', FILTER_VALIDATE_EMAIL);
+    $email = filter_input(INPUT_POST, 'email', FILTER_VALIDATE_EMAIL); */
 
 
     // menyiapkan query
     $sql = "insert into login (username,password, email, fullname) 
-            values ('$username','$password','$email','$name' )";
+            values ('$username','$password','$email','$name' )"; 
     
     // eksekusi query untuk menyimpan ke database
     mysqli_query($koneksi, $sql);
