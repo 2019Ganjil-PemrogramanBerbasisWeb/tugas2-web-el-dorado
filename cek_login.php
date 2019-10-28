@@ -8,7 +8,7 @@ include 'koneksi.php';
  
 // menangkap data yang dikirim dari form login
 $username = $_POST['username'];
-$password = $_POST['password'];
+$password = md5($_POST['password']); 
  
 echo "$username $password";
  
