@@ -9,13 +9,14 @@
     $username= mysqli_real_escape_string($koneksi, trim($_POST['username']));
     $password= mysqli_real_escape_string($koneksi, trim($_POST['pass']));
     $email= mysqli_real_escape_string($koneksi, trim($_POST['email']));
+        
     // filter data yang diinputkan
     /*$name = filter_input(INPUT_POST, 'name'?/*, FILTER_SANITIZE_STRING);
     $username = filter_input(INPUT_POST, 'username'*, FILTER_SANITIZE_STRING);
     
-    // enkripsi password
-    $password = password_hash($_POST["pass"], PASSWORD_DEFAULT);
-    $email = filter_input(INPUT_POST, 'email', FILTER_VALIDATE_EMAIL); */
+    enkripsi password*/
+    $password = md5($_POST["pass"]);
+    $email = filter_input(INPUT_POST, 'email', FILTER_VALIDATE_EMAIL); 
 
 
     // menyiapkan query
