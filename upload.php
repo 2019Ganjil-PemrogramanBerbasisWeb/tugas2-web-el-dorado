@@ -13,11 +13,11 @@ if(ISSET($_POST['submit'])){
   $conn->query("INSERT INTO `file` VALUES('', '$name[0]', '$path')") or die(mysqli_error());
   
   move_uploaded_file($file_temp, $path);
-  header("location:index.php");
+  header("location:indix.php");
   
  }else{
   echo "<script>alert('Required Field!')</script>";
-  echo "<script>window.location='index.php'</script>";
+  echo "<script>window.location='indix.php'</script>";
  }
 }
 ?>
